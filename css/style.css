@@ -29,7 +29,7 @@ body::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../img/1\(2\).png);
+  background-image: url(../img2/1\(2\).png);
   animation: change 40s infinite ease-in-out;
   -webkit-animation: change 40s infinite ease-in-out;
   opacity: 0.9;
@@ -88,11 +88,11 @@ header,
   outline: none;
 }
 .history {
-  background-image: url(../img/cewek.png);
+  background-image: url(../img2/cewek.png);
   background-size: cover;
 }
 .history2 {
-  background-image: url(../img/cowok.png);
+  background-image: url(../img2/cowok.png);
   background-size: cover;
 }
 .depan {
@@ -101,7 +101,7 @@ header,
   position: absolute; /* <-- agar menempel penuh */
   top: 0;
   left: 0;
-  background-image: url(../img/1\(2\).png);
+  background-image: url(../img2/1\(2\).png);
   background-size: cover;
   background-position: center;
   animation: change 40s infinite ease-in-out;
@@ -163,7 +163,7 @@ header,
     height: 100vh;
     z-index: 3;
     font-size: 20px;
-    background-image: url(../img/r14.jpeg);
+    background-image: url(../img2/r14.jpeg);
     background-size: cover;
     animation: change 40s infinite ease-in-out;
     -webkit-animation: change 40s infinite ease-in-out;
@@ -236,53 +236,53 @@ header,
 }
 @keyframes change {
   0% {
-    background-image: url(../img/r14.jpeg);
+    background-image: url(../img2/r14.jpeg);
   }
   14% {
-    background-image: url(../img/r15.jpeg);
+    background-image: url(../img2/r15.jpeg);
   }
   28% {
-    background-image: url(../img/r16.jpeg);
+    background-image: url(../img2/r16.jpeg);
   }
   42% {
-    background-image: url(../img/r17.jpeg);
+    background-image: url(../img2/r17.jpeg);
   }
   57% {
-    background-image: url(../img/r18.jpeg);
+    background-image: url(../img2/r18.jpeg);
   }
   71% {
-    background-image: url(../img/r19.jpeg);
+    background-image: url(../img2/r19.jpeg);
   }
   85% {
-    background-image: url(../img/7.png);
+    background-image: url(../img2/7.png);
   }
   100% {
-    background-image: url(../img/1\(2\).png);
+    background-image: url(../img2/1\(2\).png);
   } /* kembali ke awal */
 }
 @-webkit-keyframes change {
   0% {
-    background-image: url(../img/r14.jpeg);
+    background-image: url(../img2/r14.jpeg);
   }
   14% {
-    background-image: url(../img/r15.jpeg);
+    background-image: url(../img2/r15.jpeg);
   }
   28% {
-    background-image: url(../img/r16.jpeg);
+    background-image: url(../img2/r16.jpeg);
   }
   42% {
-    background-image: url(../img/r17.jpeg);
+    background-image: url(../img2/r17.jpeg);
   }
   57% {
-    background-image: url(../img/r18.jpeg);
+    background-image: url(../img2/r18.jpeg);
   }
   71% {
-    background-image: url(../img/r19.jpeg);
+    background-image: url(../img2/r19.jpeg);
   }
   85% {
-    background-image: url(../img/7.png);
+    background-image: url(../img2/7.png);
   }
   100% {
-    background-image: url(../img/1\(2\).png);
+    background-image: url(../img2/1\(2\).png);
   }
 }
