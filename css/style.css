@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300;1,400&family=Dancing+Script:wght@400;600;700&family=Playball&display=swap");
+
+.font-dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.font-playball {
+  font-family: "Playball", cursive;
+}
+
+* {
+  font-family: "Open Sans", cursive;
+}
+
+.bg-berem {
+  background-color: rgba(0, 0, 0, 0.39);
+}
+.date {
+  background-color: rgba(0, 0, 0, 0.39) transparent;
+}
+.text-berem {
+  color: #82819150;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/1\(2\).png);
+  animation: change 40s infinite ease-in-out;
+  -webkit-animation: change 40s infinite ease-in-out;
+  opacity: 0.9;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section,
+header,
+.container,
+.modal-content {
+  position: relative;
+  z-index: 2;
+}
+
+.text-wakwak {
+  background-color: #ffffff;
+}
+
+.bg-fee {
+  background-color: #00000033;
+}
+
+.bg-kulit {
+  background-color: #ffffff;
+}
+
+.fs-60 {
+  font-size: 100px;
+}
+
+.fs-45 {
+  font-size: 45px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.scale {
+  overflow: hidden;
+  transition: 0.5s;
+}
+.scale:hover {
+  transform: scale(1.05);
+}
+
+.norek {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.history {
+  background-image: url(../img/cewek.png);
+  background-size: cover;
+}
+.history2 {
+  background-image: url(../img/cowok.png);
+  background-size: cover;
+}
+.depan {
+  width: 100%;
+  height: 100%;
+  position: absolute; /* <-- agar menempel penuh */
+  top: 0;
+  left: 0;
+  background-image: url(../img/1\(2\).png);
+  background-size: cover;
+  background-position: center;
+  animation: change 40s infinite ease-in-out;
+  z-index: 1;
+}
+.galeri2 {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--primary);
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  color: var(--pastel);
+}
+
+.galeri2 iframe {
+  padding: 5px 5px 15px 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  background-color: white;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.mySlide2 {
+  flex: 1 1 calc(33.333% - 16px); /* Tiga gambar per baris di desktop */
+  max-width: calc(33.333% - 16px);
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.img-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.mySlide2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  #front-image {
+    display: none;
+  }
+  #front-text {
+    padding-top: 40%;
+    height: 100vh;
+    z-index: 3;
+    font-size: 20px;
+    background-image: url(../img/r14.jpeg);
+    background-size: cover;
+    animation: change 40s infinite ease-in-out;
+    -webkit-animation: change 40s infinite ease-in-out;
+    opacity: 0.9;
+  }
+  #front-text::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+#front-image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.bg-wakwak::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.643); /* Hitam transparan */
+  z-index: 1;
+}
+.history::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.632); /* Hitam transparan */
+  z-index: 1;
+}
+.history2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.632); /* Hitam transparan */
+  z-index: 1;
+}
+.depan::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand untuk top, right, bottom, left = 0 */
+  background-color: rgba(0, 0, 0, 0.5); /* overlay hitam transparan */
+  z-index: 2;
+}
+
+.bg-wakwak > * {
+  position: relative;
+  z-index: 2;
+}
+.history > * {
+  position: relative;
+  z-index: 2;
+}
+.history2 > * {
+  position: relative;
+  z-index: 2;
+}
+@keyframes change {
+  0% {
+    background-image: url(../img/r14.jpeg);
+  }
+  14% {
+    background-image: url(../img/r15.jpeg);
+  }
+  28% {
+    background-image: url(../img/r16.jpeg);
+  }
+  42% {
+    background-image: url(../img/r17.jpeg);
+  }
+  57% {
+    background-image: url(../img/r18.jpeg);
+  }
+  71% {
+    background-image: url(../img/r19.jpeg);
+  }
+  85% {
+    background-image: url(../img/7.png);
+  }
+  100% {
+    background-image: url(../img/1\(2\).png);
+  } /* kembali ke awal */
+}
+@-webkit-keyframes change {
+  0% {
+    background-image: url(../img/r14.jpeg);
+  }
+  14% {
+    background-image: url(../img/r15.jpeg);
+  }
+  28% {
+    background-image: url(../img/r16.jpeg);
+  }
+  42% {
+    background-image: url(../img/r17.jpeg);
+  }
+  57% {
+    background-image: url(../img/r18.jpeg);
+  }
+  71% {
+    background-image: url(../img/r19.jpeg);
+  }
+  85% {
+    background-image: url(../img/7.png);
+  }
+  100% {
+    background-image: url(../img/1\(2\).png);
+  }
+}
