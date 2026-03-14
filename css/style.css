@@ -92,8 +92,14 @@ header,
   background-size: cover;
 }
 .history2 {
-  background-image: url(../img2/r22.jpeg);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img2/rr.jpeg);
   background-size: cover;
+  background-position: center; /* Memastikan titik tengah gambar selalu di tengah div */
+  background-repeat: no-repeat; /* Mencegah gambar berulang jika div lebih besar dari gambar */
+  min-height: 100%;
+  background-position: top center;
 }
 .depan {
   width: 100%;
@@ -234,6 +240,96 @@ header,
   position: relative;
   z-index: 2;
 }
+
+.header-kartu {
+  text-align: right;
+}
+
+.logo-bri {
+  width: 80px;
+}
+
+.body-kartu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.body-kirim {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.kiri-kartu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.kirimKado {
+  gap: 8px;
+}
+
+.chip {
+  width: 30px;
+}
+.icongift {
+  width: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.nomor-rekening {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.nama-rekening {
+  font-size: 14px;
+  color: #ffffff;
+}
+.alamat {
+  font-size: 14px;
+  color: #ffffff;
+}
+.kirim {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.norek {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.footer {
+  background-color: var(--pastel);
+}
+.kartu-bri {
+  width: 270px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-family: "Arial", sans-serif;
+  position: relative; /* penting untuk parent dari tombol yang absolute */
+}
+.kirimKado {
+  width: 270px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Arial", sans-serif;
+  align-items: center;
+}
+
+
 @keyframes change {
   0% {
     background-image: url(../img2/r14.jpeg);
