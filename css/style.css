@@ -93,7 +93,6 @@ header,
 }
 .history2 {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img2/rr.jpeg);
   background-size: cover;
   background-position: center; /* Memastikan titik tengah gambar selalu di tengah div */
